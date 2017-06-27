@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Registro</title>
+
+<style type="text/css">
+
+
+body{
+	background-color:#CCC;
+	background-size:100vw 100vh;
+	background-attachment:fixed;
+	margin: 0;
+	}
+
+form{
+	width:600px;
+	margin:auto;
+	background:red;
+	padding: 10px 20px;
+	box-sizing:border-box;
+	margin-top:20px;
+	border-radius:7px;
+	}
+	
+	h2{
+		color:#000;
+		text-align:center;
+		margin:0;
+		font-size:20px;
+		font-family:Arial;
+		margin-bottom:18px;
+		
+		}
+		h2{
+		color:#000;
+		text-align:center;
+		margin:0;
+		font-size:21px;
+		font-family:Arial;
+		margin-bottom:18px;
+		
+		}
+		h4{
+		color:#FFF;
+		text-align:center;
+		margin:0;
+		font-size:18px;
+		font-family:Arial;
+		margin-bottom:20px;
+		}
+		select{
+			
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+			border:none;
+			}
+			
+					
+			textarea {
+				min-height:100px;
+				max-height:200px;
+				max-width:100%;
+				
+				}
+				
+	#button{
+		background:#31384A;
+		color:#FFF;
+		padding:20px;
+		
+		}		
+     #button:hover{
+		 cursor:pointer;
+		 }				
+		 
+	@media (max-width:600px){
+		form{
+			width:100;
+			}
+		} 	 
+		 
+</style>
+<script type="text/javascript">
+function nobackbutton(){	
+   window.location.hash="no-back-button";
+   window.location.hash="Again-No-back-button" //chrome
+   window.onhashchange=function(){window.location.hash="no-back-button";}
+}
+
+</script>
+
+
+<body onload="nobackbutton();">
+<form action="datos.php" method="post">
+<br><center><h1>REGISTRO DE SOLICITANTES</h1></center>
+<br>
+ <center><input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="folio"  placeholder="Folio(s) de Vacante de tu Interés" required></center><br>
+            
+<center>
+  <input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="nombre"  placeholder="Nombre(s)" required></center>
+<br>
+   
+ <center><input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="a_pat"  placeholder="Apellido Paterno" required></center><br>
+    
+ <center><input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="a_mat"  placeholder="Apellido Materno" required></center><br>
+    
+   <center> <input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="domicilio" placeholder="Domicilio" required></center><br>
+    
+   
+            
+            <center> <input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="telefono"  placeholder="Teléfono" required></center>
+            
+            <center> <input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="correo"  placeholder="Correo" required></center>
+            
+  <center><h2>Género&nbsp;&nbsp;&nbsp;<select name="genero" style="
+   color:#000;
+   font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;">
+<option>Masculino</option>
+<option>Femenino</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edad&nbsp;&nbsp;&nbsp;<select name="edad" style="color:#000;font-size:18px;border: 3px solid #063;
+            border-radius: 6px;">
+<option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option>
+
+  </select></h2></center>
+  
+   <h2>Último grado de estudios </h2>
+  <center><h4><input type="radio" name="grado" value="Sin Instrucción">Sin Instrucción&nbsp;&nbsp;&nbsp;
+  <input type="radio" name="grado" value="Saber leer y escribir">Saber leer y escribir <br>
+  <input type="radio" name="grado" value="Primaria">Primaria&nbsp;&nbsp;&nbsp;
+  <input type="radio" name="grado" value="Secundaria/Sec. Técnica">Secundaria/Sec. Técnica<br>
+  <input type="radio" name="grado" value="Preparatoria/Carreta técnica">Preparatoria/Carreta técnica<br>
+  <input type="radio" name="grado" value="Licenciatura">Licenciatura<br>
+  <input type="radio" name="grado" value="Maestría"> Maestría&nbsp;&nbsp;&nbsp;
+ <input type="radio" name="grado" value="Doctorado">Doctorado</h4></center> 
+ 
+
+ <center><input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="text" name="carr_esp" placeholder="Carrera o Especialidad"></center><br>
+ 
+ <center> <textarea style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" name="con_hab" maxlength="5000" cols="30" rows="5" placeholder="Conocimientos y habilidades especificas" required></textarea> 
+     <textarea style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" name="exp" maxlength="5000" cols="30" rows="5" placeholder="Experiencia Laboral" required></textarea></center>
+    <center><input style="
+			width:100%;
+            color:#000;
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+            border: 3px solid #063;
+            border-radius: 6px;
+			" type="submit" value="Enviar Registro"></center>
+</form>
+</body>
+</html>

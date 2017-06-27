@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta charset="utf-8">
+<title>Salida</title>
+</head>
+<style type="text/css">
+
+
+body{
+	background-color:#999;
+	
+	background-size:100vw 100vh;
+	background-attachment:fixed;
+	margin: 0;
+	}
+
+form{
+	width:550px;
+	margin:auto;
+	background:#F00;
+	padding: 10px 20px;
+	box-sizing:border-box;
+	margin-top:20px;
+	 border: 3px solid #063;
+            border-radius: 4px;
+	}
+	
+	
+		h2{
+		color:#000;
+		text-align:center;
+		margin:0;
+		font-size:21px;
+		font-family:Arial;
+		margin-bottom:18px;
+		
+		}
+		h1
+		{
+		color:#000;
+		text-align:center;
+		margin:0;
+		font-size:31px;
+		font-family:Arial;
+		margin-bottom:20px;
+		}
+		select{
+			
+			margin-bottom:20px;
+			padding:7px;
+			box-sizing:border-box;
+			font-size:18px;
+			border:none;
+			}
+			
+					
+			textarea {
+				min-height:100px;
+				max-height:200px;
+				max-width:100%;
+				
+				}
+				
+	#button{
+		background:#31384A;
+		color:#FFF;
+		padding:20px;
+		
+		}		
+     #button:hover{
+		 cursor:pointer;
+		 }				
+		 
+	@media (max-width:600px){
+		form{
+			width:100;
+			}
+		} 	 
+		 
+</style>
+<script type="text/javascript">
+function nobackbutton(){	
+   window.location.hash="no-back-button";
+   window.location.hash="Again-No-back-button" //chrome
+   window.onhashchange=function(){window.location.hash="no-back-button";}
+}
+</script>
+
+<script language="JavaScript">
+javascript:window.history.forward(1); 
+
+</script>
+<body onload="nobackbutton();">
+<form><center>
+<h1> POSTULACIÓN ENVIADA CORRECTAMENTE </h1>
+<h1> GRACIAS POR SU TIEMPO </h1> 
+<a style="font-size:18px; font-family:Arial; color:#06C;" href="http://www.facebook.com">Salir</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a style="font-size:18px; font-family:Arial; color:#06C;" href="aviso.html">Aviso de Privacidad</a>
+</center></form>
+
+</body>
+</html>
